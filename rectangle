@@ -1,0 +1,43 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+void draw_triangle(void);
+void draw_rectangle(void);
+void display_two_blank_lines(void);
+int main()
+{
+ /*draw traiangle*/
+ draw_triangle();
+ /*draw rectangle*/
+ draw_rectangle();
+ /*display two blank lines*/
+ display_two_blank_lines();
+ /*draw triangle*/
+ draw_triangle();
+ /*draw rectangle*/
+ draw_rectangle();
+ getchar();
+ return(0);
+}
+/*draws triangle*/
+void
+draw_triangle(void)
+{
+ printf("  /\\  \n");
+ printf(" /  \\ \n");
+ printf("/    \\ \n");
+ printf("_______ \n");
+}
+/*draw rectangle*/
+void
+draw_rectangle(void)
+{
+ printf(" ----- \n");
+ printf(" |   | \n");
+ printf(" ----- \n");
+} 
+/*display two blank lines*/
+void
+display_two_blank_lines(void)
+{
+ printf(" \n\n ");
+}
